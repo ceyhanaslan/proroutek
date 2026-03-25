@@ -116,8 +116,8 @@ export default function Home() {
             </h1>
 
             <p className="max-w-lg text-lg leading-relaxed text-slate-400">
-              CNC Router, Lazer ve Strafor kesim teknolojilerimizle ahşap, plastik ve pleksi ürünlerinizi
-              <span className="text-slate-100 font-semibold"> aynı gün teslimat</span> avantajıyla üretiyoruz.
+              CNC Router Kesim Teknolojilerimizle ahşaptan alüminyuma, kompozitten pleksiye kadar sayısız materyali sanata ve endüstriyel güce dönüştürerek
+              <span className="text-slate-100 font-semibold"> aynı gün teslimat</span> avantajıyla sizlerin hizmetine sunuyoruz.
             </p>
 
             <div className="flex flex-wrap gap-4">
@@ -139,7 +139,7 @@ export default function Home() {
             <div className="grid grid-cols-3 gap-8 pt-4 border-t border-slate-900 w-full">
               {[
                 ["Aynı Gün", "Teslimat"],
-                ["8 mm", "Lazer Kesim"],
+                ["Çapaksız ve", "Firesiz Kesim"],
                 ["0.01mm", "Tolerans"],
               ].map(([top, bot], i) => (
                 <div key={i}>
@@ -171,34 +171,29 @@ export default function Home() {
 
         {/* --- SERVICES --- */}
         <section id="services" className="py-24 space-y-12">
-          <div className="max-w-2xl">
-            <h2 className="text-3xl font-bold">Uzmanlık Alanlarımız</h2>
+          <div className="max-w-3xl">
+            <h2 className="text-3xl font-bold">Gelişmiş 4 Eksenli CNC Router Sistemleri</h2>
             <p className="mt-4 text-slate-400">
-              Ahşap kesimden AR-GE odaklı özel projelere kadar geniş yelpazede hizmet veriyoruz.
+              Profesyonel nesting hizmeti ve ileri teknoloji CNC router sistemleri ile tüm malzeme gruplarını hassas ve çapaksız şekilde işliyoruz.
             </p>
           </div>
 
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {[
               {
                 icon: Cpu,
                 title: "CNC Router Kesim",
-                desc: "Ahşap ve kompozit gruplarında 4 eksenli yüksek hız.",
+                desc: "Ahşap, Kompozit ve Plastik gruplarında 4 eksenli yüksek hız, hassasiyet ve çapaksız kesim.",
               },
               {
                 icon: Zap,
-                title: "Lazer Kesim",
-                desc: "8mm kalınlığa kadar pleksi ve plastiklerde pürüzsüz yüzey.",
-              },
-              {
-                icon: Box,
-                title: "Strafor Kesim",
-                desc: "Hızlı prototipleme ve dekoratif strafor çözümleri.",
+                title: "Firesiz Kesim",
+                desc: "Uzman ekibimiz ve profesyonel nesting hizmetimiz ile maksimum verimlilik sağlayarak malzeme kayıplarını minimuma indirmek.",
               },
               {
                 icon: Layers,
-                title: "Özel Üretim",
-                desc: "Stand ve mobilya projeleriniz için teknik AR-GE desteği.",
+                title: "Özel Üretim Projeler",
+                desc: "Stand, Mobilya, Makina Parçaları vb. tüm projelerin AR-GE çalışmaları ve teknik destek.",
               },
             ].map((service, i) => (
               <div
@@ -224,11 +219,11 @@ export default function Home() {
         >
           <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
             <div className="space-y-6">
-              <h2 className="text-3xl font-bold">Zengin Malzeme Parkuru</h2>
+              <h2 className="text-3xl font-bold">ProRoutek Kesim Merkezi</h2>
               <p className="text-slate-400 leading-relaxed">
-                Tüm malzeme gruplarını{" "}
-                <span className="text-slate-100 font-medium">firesiz ve çapaksız</span> şekilde işliyoruz.
-                Sadece kesim değil, aynı zamanda malzeme tedariği konusunda da satış hizmetimiz mevcuttur.
+                Ahşaptan strafora kadar tüm malzeme grupları
+                <span className="text-slate-100 font-medium"> firesiz, pürüzsüz ve çapaksız</span> şekilde kesilmektedir. Aşağıda belirtilen malzemelerin kesim işlemleri
+                <span className="text-slate-100 font-medium"> aynı gün teslimat</span> garantisiyle yapılmaktadır.
               </p>
 
               <ul className="space-y-4">
@@ -246,12 +241,16 @@ export default function Home() {
                   </li>
                 ))}
               </ul>
+
+              <p className="text-sm text-slate-400 pt-4 border-t border-slate-800">
+                En az fire kaybı ile kesim işlemleri için ve özel malzeme kesimleriniz için bizlerle iletişime geçebilirsiniz.
+              </p>
             </div>
 
             <div className="overflow-hidden rounded-2xl border border-slate-800 bg-slate-950">
               <div className="bg-slate-900/50 px-6 py-4 border-b border-slate-800 text-center">
                 <p className="text-xs font-bold uppercase tracking-widest text-cyan-400">
-                  Popüler Malzemeler & Fiyatlandırma
+                  Popüler Malzemeler
                 </p>
               </div>
               <div className="grid grid-cols-2 divide-x divide-y divide-slate-800">
@@ -275,9 +274,50 @@ export default function Home() {
               </div>
               <div className="p-4 bg-slate-900/20 text-center border-t border-slate-800">
                 <p className="text-[10px] text-slate-500 italic">
-                  Tabaka başına hesaplı fiyatlandırma uygulanır.
+                  Aynı gün teslimat garantisiyle kesim işlemleri yapılmaktadır.
                 </p>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* --- ABOUT SECTION --- */}
+        <section id="about" className="py-24 space-y-12">
+          <div className="grid gap-12 lg:grid-cols-2 lg:items-start">
+            <div className="space-y-6">
+              <h2 className="text-4xl font-bold">Hakkımızda</h2>
+              <p className="text-lg leading-relaxed text-slate-300">
+                ProRoutek CNC Kesim ve İşleme Merkezi, Kocaeli Başiskele yerleşkesinde alanında uzman ve dinamik kadrosu ile yenilikçi çözümler sunmak ve sektörde öncü bir rol üstlenmek amacıyla kurulmuştur.
+              </p>
+            </div>
+
+            <div className="rounded-2xl border border-slate-800 bg-slate-900/50 p-8 space-y-4">
+              <h3 className="text-xl font-bold text-cyan-400">Değerli Müşterilerimiz;</h3>
+              <p className="text-slate-300 leading-relaxed text-sm">
+                Türkiye'nin CNC kesim ve işleme alanında güvenilir adresi olma hedefiyle kurulan ProRoutek, profesyonel nesting hizmeti ve ileri teknoloji CNC router sistemleri ile tüm malzemelerin kesim, işleme ve pazarlamasını gerçekleştirmektedir.
+              </p>
+              <p className="text-slate-300 leading-relaxed text-sm">
+                Yüksek kapasite ve geniş ürün çeşitliliğimizle, uluslararası standartlarda en kaliteli hizmeti sunmak öncelikli hedefimizdir. Asıl gayemiz, büyüyen Türkiye ekonomisine sürdürülebilir katkılar sağlayarak siz değerli müşterilerimiz ile bu yolda birlikte ilerlemektir.
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-12 rounded-2xl border border-slate-800 bg-gradient-to-r from-cyan-500/10 to-emerald-500/10 p-8">
+            <h3 className="text-2xl font-bold mb-6">Neden ProRoutek?</h3>
+            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              {[
+                { title: "Milimetrik Hassasiyet", icon: "✓" },
+                { title: "Kusursuz Yüzey Kalitesi", icon: "✓" },
+                { title: "Malzeme Çeşitliliği", icon: "✓" },
+                { title: "Zamanında Teslimat", icon: "✓" },
+                { title: "Uzman Kadro", icon: "✓" },
+                { title: "Profesyonel Nesting", icon: "✓" },
+              ].map((item, i) => (
+                <div key={i} className="flex items-start gap-3">
+                  <span className="text-cyan-400 font-bold text-lg">{item.icon}</span>
+                  <p className="text-slate-300">{item.title}</p>
+                </div>
+              ))}
             </div>
           </div>
         </section>
