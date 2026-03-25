@@ -139,8 +139,8 @@ export default function Home() {
             <div className="grid grid-cols-3 gap-8 pt-4 border-t border-slate-900 w-full">
               {[
                 ["Aynı Gün", "Teslimat"],
-                ["Çapaksız ve", "Firesiz Kesim"],
                 ["0.01mm", "Tolerans"],
+                ["4 Eksenli", "CNC Router"],
               ].map(([top, bot], i) => (
                 <div key={i}>
                   <p className="text-xl font-bold text-slate-50">{top}</p>
@@ -178,7 +178,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {[
               {
                 icon: Cpu,
@@ -187,13 +187,18 @@ export default function Home() {
               },
               {
                 icon: Zap,
-                title: "Firesiz Kesim",
+                title: "Çapaksız ve Firesiz Kesim",
                 desc: "Uzman ekibimiz ve profesyonel nesting hizmetimiz ile maksimum verimlilik sağlayarak malzeme kayıplarını minimuma indirmek.",
+              },
+              {
+                icon: Box,
+                title: "Strafor Kesim",
+                desc: "Hızlı prototipleme ve dekoratif strafor çözümleri.",
               },
               {
                 icon: Layers,
                 title: "Özel Üretim Projeler",
-                desc: "Stand, Mobilya, Makina Parçaları vb. tüm projelerin AR-GE çalışmaları ve teknik destek.",
+                desc: "Stand, Mobilya, Makina Parçaları vb. tüm projelerin AR-GE çalışmaları.",
               },
             ].map((service, i) => (
               <div
